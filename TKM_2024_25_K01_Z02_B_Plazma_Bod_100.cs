@@ -21,15 +21,14 @@ class TKM_2024_25_K01_Z02_B_Plazma_Bod_100
         }
 
         // RESAVANJE ZADATKA
+        long zalihe = 0;                    // Trenutna kolicina zaliha
+        long pojela = 0;                    // Trenutna kolicina pojela
+        int id = 0;                         // Trenutna pozicija za nizove D[id] i P[id]
+        long dana_proslo = 1;               // Koliko dana je proslo izmedju dva id, odnosno D[id] - D[id-1]: Inicijalno mora 1, jer je prvi dan nabavke 1, a pocetni je nulti
 
         for (int q = 0; q < Q; q++)
         {
             long K = long.Parse(Console.ReadLine());
-
-            long zalihe = 0;                    // Trenutna kolicina zaliha
-            long pojela = 0;                    // Trenutna kolicina pojela
-            int id = 0;                         // Trenutna pozicija za nizove D[id] i P[id]
-            long dana_proslo = 1;               // Koliko dana je proslo izmedju dva id, odnosno D[id] - D[id-1]: Inicijalno mora 1, jer je prvi dan nabavke 1, a pocetni je nulti
 
             while (id < N && D[id] <= K)
             {
