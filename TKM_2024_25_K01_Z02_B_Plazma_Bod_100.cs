@@ -1,4 +1,6 @@
 // https://arena.petlja.org/sr-Latn-RS/competition/2024-2025-kv1-testiranje#tab_137812
+// https://algora.petlja.org/t/2024-2025/9035/2
+// https://github.com/draganilicnis/TKM_2024_25_K01_Z02_B_Plazma_Bod_100/blob/main/TKM_2024_25_K01_Z02_B_Plazma_Bod_100.cs
 
 using System;
 
@@ -29,6 +31,7 @@ class TKM_2024_25_K01_Z02_B_Plazma_Bod_100
         for (int q = 0; q < Q; q++)
         {
             long K = long.Parse(Console.ReadLine());
+
 
             while (id < N && D[id] <= K)
             {
